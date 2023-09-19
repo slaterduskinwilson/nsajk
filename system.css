@@ -320,6 +320,7 @@ h2 {
 .window {
   flex-direction: column;
   margin: 1rem;
+
   min-width: 320px;
   overflow: hidden;
   background-color: var(--primary);
