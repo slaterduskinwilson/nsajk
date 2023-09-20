@@ -2,7 +2,21 @@
    padding: 2rem;
   }
 
-  blockquote {
+  /* blockquote {
     
+  } */
+
+  .hide-me {
+   display: none;
+  }
+
+
+  .dark-mode {
+   
+   color: aquamarine;
+  }
+
+  .dark-mode p {
+   background-color: black;
   }
 
