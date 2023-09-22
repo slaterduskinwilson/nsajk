@@ -11,12 +11,49 @@
   }
 
 
-  .dark-mode {
+  #entire-thing.dark-mode {
    
-   color: aquamarine;
+   color: rgb(222, 247, 255);
+   background: black;
+   
   }
 
-  .dark-mode p {
-   background-color: black;
+  .dark-mode .window, .dark-mode ul, .dark-mode div div.window div.title-bar h1.title {
+   background: rgb(217, 0, 105);
   }
+
+  #entire-thing.kombat-mode {
+   
+   color: rgb(238, 0, 158);
+   background: rgb(230, 255, 103);
+   
+  }
+
+  .kombat-mode .window, .kombat-mode ul, .kombat-mode div div.window div.title-bar h1.title {
+   background: rgb(0, 255, 225);
+  }
+
+ul li {
+   margin: 1.2rem;
+   font-size: 1.2rem;
+}
+
+#hidden-menu {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+/* put the password input when you click SHUT DOWN more in the middle of the screen */
+
+
+
+/* button.resize {
+   
+} */
+
+
+
+
+
+
 

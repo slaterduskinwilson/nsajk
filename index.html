@@ -7,184 +7,208 @@
         <link rel="stylesheet" href="system.css" />
         <link rel="stylesheet" href="styles.css" />
     </head>
-    <body>
+    <body id="entire-thing">
         <!-- <div class="standard-dialog center scale-down" style="width:30rem;">
         <h1 class="dialog-text">Matthew Wilson Was The Fucking Greastest, Version 1.0 (18 Jan 84)</h1>
         <p class="dialog-text">&copy; 1984 Apple Computer</p>
       </div> -->
 
-      <div id="entire-thing">
+        <div>
+            <div class="window">
+                <div class="title-bar">
+                    <button
+                        aria-label="Close"
+                        class="close"
+                        id="close-this-website"
+                    ></button>
+                    <h1 class="title">music by NSA(jk)</h1>
+                    <button id="resize-button" aria-label="Resize" class="resize"></button>
+                </div>
+
+                <!--  -->
+                <audio id="myAudio" src="spiders.mp3" preload="auto"></audio>
 
 
-    
+                <div>
+                    <ul role="menu-bar">
+                        <li role="menu-item" tabindex="0" aria-haspopup="true">
+                            File
+                            <ul role="menu">
+                                <li role="menu-item">
+                                    <a href="https://nsajk.bandcamp.com/">Buy Our Music on BandCamp</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="https://ko-fi.com/matthewwilson69">Donate Money Without Buying Any Music</a>
+                                </li>
+                                <li role="menu-item" class="divider">
+                                    <a href="#menu">Friends of the Band</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menu-item" tabindex="0" aria-haspopup="true">
+                            Edit
+                            <ul role="menu">
+                                <li role="menu-item">
+                                    <a href="#menu"
+                                        >NSA jk is a deconstructionist pop music
+                                        project by Matt Wilson, currently based
+                                        in Berlin Germany. Please enjoy our
+                                        website! Be sure to also check the File
+                                        and Special menus for the most up to
+                                        date and valuable information.</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menu-item" tabindex="0" aria-haspopup="true">
+                            Side Projects
+                            <ul role="menu">
+                                <li role="menu-item">
+                                    <a href="https://skannieraitt.com">Skannie Raitt</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu"
+                                        >Hard Mike and the Lemonades</a
+                                    >
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu">Ice/No Ice</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu">Dick Tater and the Tots</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu">The Cranbuddies</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu"
+                                        >The Roxy Music Cover Band</a
+                                    >
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu">Swank7</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu"
+                                        >Mike Post Presents The Penises, An SVU
+                                        Cover Band</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menu-item" tabindex="0" aria-haspopup="true">
+                            SVU
+                            <ul role="menu">
+                                <li role="menu-item">
+                                    <a href="#menu"
+                                        >Law and Order: Special Victims Unit:
+                                        The Roleplaying Game</a
+                                    >
+                                </li>
+                                <li role="menu-item">
+                                    <a href="#menu"
+                                        >Listen to SVU: The RPG: The
+                                        Soundtrack</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menu-item" tabindex="0" aria-haspopup="true">
+                            Special
+                            <ul role="menu">
+                                <li role="menu-item">
+                                    <a href="https://slaterduskinwilson.medium.com/">Essays And Press</a>
+                                </li>
+                                <li role="menu-item">
+                                    <a href="https://ko-fi.com/matthewwilson69">Matt Wilson's Ko-Fi</a>
+                                </li>
+                                <li class="close-hidden-menu" role="menu-item">
+                                    <a href="#menu">Shut Down</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="window">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">music by NSA(jk)</h1>
-                <button aria-label="Resize" class="resize"></button>
-            </div>
+                <h2>Welcome to NSAjk.com</h2>
 
-            <div>
-                <ul role="menu-bar">
-                    <li role="menu-item" tabindex="0" aria-haspopup="true">
-                        File
-                        <ul role="menu">
-                            <li role="menu-item">
-                                <a href="#menu">NSAjk on BandCamp</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">Donate Money</a>
-                            </li>
-                            <li role="menu-item" class="divider">
-                                <a href="#menu">Friends of the Band</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li role="menu-item" tabindex="0" aria-haspopup="true">
-                        Edit
-                        <ul role="menu">
-                            <li role="menu-item">
-                                <a href="#menu"
-                                    >NSA jk is a deconstructionist pop music
-                                    project by Matt Wilson, currently based in
-                                    Berlin Germany. Please enjoy our website! Be
-                                    sure to also check the File and Special
-                                    menus for the most up to date and valuable
-                                    information.</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                    <li role="menu-item" tabindex="0" aria-haspopup="true">
-                        Side Projects
-                        <ul role="menu">
-                            <li role="menu-item">
-                                <a href="#menu">Skannie Raitt</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">Hard Mike and the Lemonades</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">Ice/No Ice</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">Dick Tater and the Tots</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">The Cranbuddies</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">The Roxy Music Cover Band</a>
-                            </li>
-                            <li role="menu-item"><a href="#menu">Swank7</a></li>
-                            <li role="menu-item">
-                                <a href="#menu"
-                                    >Mike Post Presents The Penises, An SVU
-                                    Cover Band</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                    <li role="menu-item" tabindex="0" aria-haspopup="true">
-                        SVU
-                        <ul role="menu">
-                            <li role="menu-item">
-                                <a href="#menu"
-                                    >Law and Order: Special Victims Unit: The
-                                    Roleplaying Game</a
-                                >
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu"
-                                    >Listen to SVU: The RPG: The Soundtrack</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                    <li role="menu-item" tabindex="0" aria-haspopup="true">
-                        Special
-                        <ul role="menu">
-                            <li role="menu-item">
-                                <a href="#menu">Essays And Press</a>
-                            </li>
-                            <li role="menu-item">
-                                <a href="#menu">Matt Wilson's Ko-Fi</a>
-                            </li>
-                            <li class="close-hidden-menu" role="menu-item">
-                                <a href="#menu">Shut Down</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+             
+                <p>
+                    <strong>NSA(jk)</strong> is a deconstructionist music
+                    project created by Matt Wilson.
+                </p>
 
-            <h2>Welcome to NSAjk.com</h2>
+                <article>
+                    <blockquote>
+                        Please check out the File, Edit,
+                        View, and Special menus above.
+                        <em>Try different codes, like from Contra or Mortal Kombat.</em>
+                      
+                    </blockquote>
+                </article>
 
-            <p>This is your ONLY up to date source for NSA jk.</p>
-            <p>
-                <strong>NSA(jk)</strong> is a deconstructionist music project
-                created by Matt Wilson.
-            </p>
+                <div class="standard-dialog center scale-down" style="width:30rem; margin:20rem;">
+                    <!-- <h1 class="dialog-text">The Macintosh Finder, Version 1.0 (18 Jan 84)</h1> -->
+                    <a href="https://matthewwilson.website">
 
-            <article>
-                <blockquote>
-                    Please stay for a while and check out the File, Edit, View,
-                    and Special menus above.
-                    <em>Don't forget to try The Konami Code.</em>
-                </blockquote>
-            </article>
+                        <p class="dialog-text">&copy; Matthew Wilson's Website Websites, inc</p>
+                    </a>
+                  </div>
 
-            <div id="hidden-menu" class="hide-me">
-                <!-- this gets hidden or shown depending on whether you hit SHUT DOWN -->
-                <div class="window scale-down" style="width: 30rem">
-                    <div class="title-bar">
-                        <button
-                            aria-label="Close"
-                            class="close close-hidden-menu"
-                        ></button>
-                        <h1 class="title">enter your password</h1>
-                        <button
-                            aria-label="Resize"
-                            disabled
-                            class="hidden"
-                        ></button>
-                    </div>
-                    <div class="separator"></div>
+                <div id="hidden-menu" class="hide-me">
+                    <!-- this gets hidden or shown depending on whether you hit SHUT DOWN -->
+                    <div class="window scale-down" style="width: 30rem">
+                        <div class="title-bar">
+                            <button
+                                aria-label="Close"
+                                class="close close-hidden-menu"
+                            ></button>
+                            <h1 class="title">enter your password</h1>
+                            <button
+                                aria-label="Resize"
+                                disabled
+                                class="hidden"
+                            ></button>
+                        </div>
+                        <div class="separator"></div>
 
-                    <div class="modeless-dialog">
-                        <section
-                            class="field-row"
-                            style="justify-content: flex-start"
-                        >
-                            <label for="text_find" class="modeless-text"
-                                >password:</label
+                        <div class="modeless-dialog">
+                            <section
+                                class="field-row"
+                                style="justify-content: flex-start"
                             >
-                            <input
-                                id="text_find"
-                                type="text"
-                                style="width: 100%"
-                                placeholder=""
-                            />
-                        </section>
-                        <section
-                            class="field-row"
-                            style="justify-content: flex-end"
-                        >
-                            <button class="btn close-hidden-menu">
-                                Cancel
-                            </button>
-                            <button class="btn btn-default" style="width: 95px">
-                                Enter
-                            </button>
-                        </section>
+                                <label for="text_find" class="modeless-text"
+                                    >password:</label
+                                >
+                                <input
+                                    id="text_find"
+                                    type="text"
+                                    style="width: 100%"
+                                    placeholder=""
+                                />
+                            </section>
+                            <section
+                                class="field-row"
+                                style="justify-content: flex-end"
+                            >
+                                <button class="btn close-hidden-menu">
+                                    Cancel
+                                </button>
+                                <button
+                                    class="btn btn-default"
+                                    style="width: 95px"
+                                    id="enterButton"
+                                >
+                                    Enter
+                                </button>
+                            </section>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-  </div>
 
         <script src="script.js"></script>
-
     </body>
 </html>
