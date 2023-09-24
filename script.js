@@ -49,6 +49,8 @@ document.addEventListener('keydown', function (event) {
             alert('Konami Code activated!')
             entireThing.classList.toggle('dark-mode')
 
+            showKonamiGif()
+
             // Reset the code position to start over
             konamiCodePosition = 0
         }
@@ -97,6 +99,9 @@ document.addEventListener('keydown', function (event) {
 
             //fire the spider audio function:
             playSpiderman()
+
+            //and show the kombat gif
+            showKombatGif()
         }
     } else {
         // If the pressed key does not match the current position, reset the position
@@ -175,4 +180,14 @@ function playSpiderman(){
     const audio = document.getElementById("spiderman-themes")
     audio.play()
     alert('Mortal Kombat Blood Code entered successfully!')
+}
+
+function showKombatGif(){
+    const gif = document.getElementById("mortal-kombat")
+    gif.classList.toggle("hide-me")
+}
+
+function showKonamiGif() {
+    const gif = document.getElementById("konami")
+    gif.classList.toggle("hide-me")
 }
