@@ -94,6 +94,9 @@ document.addEventListener('keydown', function (event) {
 
             // Reset the code position to start over
             kombatCodePosition = 0
+
+            //fire the spider audio function:
+            playSpiderman()
         }
     } else {
         // If the pressed key does not match the current position, reset the position
@@ -156,14 +159,20 @@ enterButton.addEventListener("click", checkPassword);
 // now, here's what happens when you click the resize button at the top of the site:
 
 
-  // Function to play the audio
-  function playAudio() {
-    const audio = document.getElementById("myAudio");
+  // Function to play the Spiders Furi song
+  function playSpiders() {
+    const audio = document.getElementById("spiders-furi");
     audio.play();
-    alert('fired the playAudio function')
+    alert('please enjoy Japanese rock band The Spiders.')
   }
 
   // Attach the click event listener to the "Resize" button
   const resizeButton = document.getElementById("resize-button");
-  resizeButton.addEventListener("click", playAudio);
+  resizeButton.addEventListener("click", playSpiders);
 
+//to play the Spiderman Themes:
+function playSpiderman(){
+    const audio = document.getElementById("spiderman-themes")
+    audio.play()
+    alert('Mortal Kombat Blood Code entered successfully!')
+}
