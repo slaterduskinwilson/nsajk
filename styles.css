@@ -53,13 +53,21 @@ ul li {
 
 
 
-
+ul.art-gallery {
+   display: flex;
+   /* width: 20rem; */
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
 
 .art-gallery li {
 list-style: none;
-margin: 12rem;
+/* max-width: 10rem; */
 }
 
 .art-gallery li img {
    border-radius: 4px;
+   max-width: 30rem;
+   
 }
