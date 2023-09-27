@@ -17,9 +17,24 @@
    background: black;
    
   }
+  #entire-thing.dark-mode .standard-dialog {
+   
+   color: rgb(222, 247, 255);
+   background: rgb(0, 137, 117);
+   
+  }
 
-  .dark-mode .window, .dark-mode ul, .dark-mode div div.window div.title-bar h1.title {
+
+
+
+  .dark-mode .window, .dark-mode ul {
    background: rgb(217, 0, 105);
+   color: rgb(222, 247, 255);
+   
+  }
+
+  .dark-mode div div.window div.title-bar h1.title {
+
   }
 
   #entire-thing.kombat-mode {
@@ -71,3 +86,4 @@ list-style: none;
    max-width: 30rem;
    
 }
+

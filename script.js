@@ -60,18 +60,16 @@ document.addEventListener('keydown', function (event) {
     }
 })
 
-
-
 // now, the MORTAL KOMBAT blood code:
 const kombatCodeSequence = [
-   'a',
+    'a',
     'b',
     'a',
     'c',
     'a',
     'b',
     'b'
-// this is the blood code from MK1
+    // this is the blood code from MK1
 ]
 
 // Variable to keep track of the current position in the code sequence
@@ -109,24 +107,21 @@ document.addEventListener('keydown', function (event) {
     }
 })
 
-
-
 // ok now let's handle the CLOSE button
 
 closeButton = document.getElementById('close-this-website')
 // I just want to target the very first one of these
 
-closeButton.addEventListener("click", handleCloseThisWebsite)
+closeButton.addEventListener('click', handleCloseThisWebsite)
 
 function handleCloseThisWebsite() {
     // alert('you fired handleCloseThisWebsite!')
-    document.body.innerHTML = "<div style='background: black; color: yellow; font-size: 5rem'><h1>Thank you for using NSAJK.com.</h1> <p>You will now be redirected to https://MatthewWilson.website</p></div>"
+    document.body.innerHTML =
+        "<div style='background: black; color: yellow; font-size: 5rem'><h1>Thank you for using NSAJK.com.</h1> <p>You will now be redirected to https://MatthewWilson.website</p></div>"
 
-    setTimeout(function(){
-
-        window.location.replace("https://matthewwilson.website")
+    setTimeout(function () {
+        window.location.replace('https://matthewwilson.website')
     }, 3000)
-
 }
 
 // ok now...
@@ -134,60 +129,57 @@ function handleCloseThisWebsite() {
 // Function to check the entered password
 function checkPassword() {
     // Get the input element by its ID
-    const passwordInput = document.getElementById("text_find");
+    const passwordInput = document.getElementById('text_find')
 
     // Get the entered password value
-    const enteredPassword = passwordInput.value;
+    const enteredPassword = passwordInput.value
 
     // Replace "yourSecretPassword" with the actual password you want to check against
-    const correctPassword = "dick";
+    const correctPassword = 'dick'
 
     // Check if the entered password matches the correct password
     if (enteredPassword === correctPassword) {
-        alert("Password is correct. Access granted!");
+        alert('Password is correct. Access granted!')
         // Here, you can perform actions for successful password entry
     } else {
-        alert("Incorrect password. Try again.");
+        alert('Incorrect password. Try again.')
         // Here, you can handle the case of an incorrect password
     }
 
     // Clear the input field
-    passwordInput.value = "";
+    passwordInput.value = ''
 }
 
 // Attach the click event listener to the "Enter" button
-const enterButton = document.getElementById("enterButton");
-enterButton.addEventListener("click", checkPassword);
-
-
+const enterButton = document.getElementById('enterButton')
+enterButton.addEventListener('click', checkPassword)
 
 // now, here's what happens when you click the resize button at the top of the site:
 
-
-  // Function to play the Spiders Furi song
-  function playSpiders() {
-    const audio = document.getElementById("spiders-furi");
-    audio.play();
+// Function to play the Spiders Furi song
+function playSpiders() {
+    const audio = document.getElementById('spiders-furi')
+    audio.play()
     alert('please enjoy Japanese rock band The Spiders.')
-  }
+}
 
-  // Attach the click event listener to the "Resize" button
-  const resizeButton = document.getElementById("resize-button");
-  resizeButton.addEventListener("click", playSpiders);
+// Attach the click event listener to the "Resize" button
+const resizeButton = document.getElementById('resize-button')
+resizeButton.addEventListener('click', playSpiders)
 
 //to play the Spiderman Themes:
-function playSpiderman(){
-    const audio = document.getElementById("spiderman-themes")
+function playSpiderman() {
+    const audio = document.getElementById('spiderman-themes')
     audio.play()
     alert('Mortal Kombat Blood Code entered successfully!')
 }
 
-function showKombatGif(){
-    const gif = document.getElementById("mortal-kombat")
-    gif.classList.toggle("hide-me")
+function showKombatGif() {
+    const gif = document.getElementById('mortal-kombat')
+    gif.classList.toggle('hide-me')
 }
 
 function showKonamiGif() {
-    const gif = document.getElementById("konami")
-    gif.classList.toggle("hide-me")
+    const gif = document.getElementById('konami')
+    gif.classList.toggle('hide-me')
 }
