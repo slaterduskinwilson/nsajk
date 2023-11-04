@@ -1,89 +1,95 @@
-.window h1, .window h2, .window h3, .window p {
-   padding: 2rem;
-  }
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
 
-  /* blockquote {
+ul {
+    list-style: none;
+}
+
+.window h1,
+.window h2,
+.window h3,
+.window p {
+    padding: 2rem;
+}
+
+/* blockquote {
     
   } */
 
-  .hide-me {
-   display: none;
-  }
+.hide-me {
+    display: none;
+}
 
+#entire-thing.dark-mode {
+    color: rgb(222, 247, 255);
+    background: black;
+}
+#entire-thing.dark-mode .standard-dialog {
+    color: rgb(222, 247, 255);
+    background: rgb(0, 137, 117);
+}
 
-  #entire-thing.dark-mode {
-   
-   color: rgb(222, 247, 255);
-   background: black;
-   
-  }
-  #entire-thing.dark-mode .standard-dialog {
-   
-   color: rgb(222, 247, 255);
-   background: rgb(0, 137, 117);
-   
-  }
+.dark-mode .window,
+.dark-mode ul {
+    background: rgb(217, 0, 105);
+    color: rgb(222, 247, 255);
+}
 
+#entire-thing.kombat-mode {
+    color: rgb(238, 0, 158);
+    background: rgb(230, 255, 103);
+}
 
-
-
-  .dark-mode .window, .dark-mode ul {
-   background: rgb(217, 0, 105);
-   color: rgb(222, 247, 255);
-   
-  }
-
-  .dark-mode div div.window div.title-bar h1.title {
-
-  }
-
-  #entire-thing.kombat-mode {
-   
-   color: rgb(238, 0, 158);
-   background: rgb(230, 255, 103);
-   
-  }
-
-  .kombat-mode .window, .kombat-mode ul, .kombat-mode div div.window div.title-bar h1.title {
-   background: rgb(0, 255, 225);
-  }
+.kombat-mode .window,
+.kombat-mode ul,
+.kombat-mode div div.window div.title-bar h1.title {
+    background: rgb(0, 255, 225);
+}
 
 ul li {
-   margin: 1.2rem;
-   font-size: 1.2rem;
+    margin: 1.2rem;
+    font-size: 1.2rem;
 }
 
 #hidden-menu {
-   position: absolute;
-   top: 50%;
-   left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
 }
 
-#mortal-kombat img, #konami img {
-   position: absolute;
-   top: 30%;
-   left: 40%;
-   width: 50rem;
+#mortal-kombat img,
+#konami img {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 50rem;
 }
-
-
 
 ul.art-gallery {
-   display: flex;
-   /* width: 20rem; */
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
+    display: flex;
+    /* width: 20rem; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .art-gallery li {
-list-style: none;
-/* max-width: 10rem; */
+    /* list-style: none; */
+    /* max-width: 10rem; */
 }
 
 .art-gallery li img {
-   border-radius: 4px;
-   max-width: 30rem;
-   
+    border-radius: 4px;
+    max-width: 30rem;
 }
 
+/* 
+ul.videos {
+   background-color: black;
+   color: white;
+
+} */

@@ -183,3 +183,43 @@ function showKonamiGif() {
     const gif = document.getElementById('konami')
     gif.classList.toggle('hide-me')
 }
+
+
+
+// play video.html
+
+function playVideo() {
+    const video = document.querySelector('.play-video')
+    video.play()
+}
+
+const tv = document.querySelector('.tv-frame')
+tv.addEventListener('click', playVideo)
+
+
+// zooming the view: THIS IS AN INSANE IDEA. DONT DO IT WITH THE VIDEO, BUT MAYBE SOMEPLACE ELSE
+
+// const video = document.getElementById('video');
+// const tvFrame = document.getElementById('tv');
+
+// // Set initial scale and direction
+// let scale = 1;
+// let zoomDirection = 1;
+
+// // Function to zoom in or out
+// function zoom() {
+//     // Adjust the scale by a small amount
+//     scale += 0.01 * zoomDirection;
+
+//     // Apply the scale to the video container
+//     video.style.transform = `scale(${scale})`;
+//     tvFrame.style.transform = `scale(${scale})`;
+
+//     // Reverse direction when scale reaches limits
+//     if (scale >= 1.2 || scale <= 0.8) {
+//         zoomDirection *= -1;
+//     }
+// }
+
+// Call the zoom function periodically (adjust the interval as needed)
+// setInterval(zoom, 1000);

@@ -1,3 +1,17 @@
+videos/
+
+*.mp4
+
+*.webm
+
+# the videos folder just eats up space
+*.mp3
+
+#and so do these mp3s
+*.png
+
+# and so do all these images
+
 # Logs
 logs
 *.log
