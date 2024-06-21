@@ -70,6 +70,7 @@
 		flex-direction: row;
 		gap: 6rem;
         align-items: flex-start;
+        flex-wrap: wrap;
 	}
 
 	.window {
