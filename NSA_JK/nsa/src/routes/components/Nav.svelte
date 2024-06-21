@@ -8,7 +8,7 @@
 				</li>
 
 				<li role="menu-item">
-					<a href="./video.html">Video</a>
+					<a href="/video">Video</a>
 				</li>
 				<li role="menu-item">
 					<a href="https://nsajk.bandcamp.com/" target="_blank" rel="noopener noreferrer"
