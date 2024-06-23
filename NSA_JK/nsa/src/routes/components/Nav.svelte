@@ -41,7 +41,7 @@
 			Side Projects
 			<ul role="menu">
 				<li role="menu-item">
-					<a href="https://skannieraitt.bandcamp.com" target="_blank" rel="noopener noreferrer"
+					<a href="/sideprojects/skannieraitt" 
 						>Skannie Raitt</a
 					>
 				</li>

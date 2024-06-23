@@ -7,7 +7,7 @@
 		<div class="alert-contents" style="padding-left: 30px; padding-right:20px;">
 			
 			<section class="field-row" style="justify-content: flex-start">
-				<div class="square" style="border: 1px solid black;"><img src="/icon/noun-guitar-smash-106414.svg" alt="" style="max-width: 100%;"></div>
+				
 				
 					<slot></slot>
 			
@@ -23,5 +23,7 @@
 <!-- markup (zero or more items) goes here -->
 
 <style>
-    
+    .alert-box{
+		margin: 10rem 30rem;
+	}
 </style>
