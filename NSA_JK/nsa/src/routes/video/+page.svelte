@@ -18,6 +18,14 @@
 			isLarge: false,
 			show: true,
 			direction: { x: 1200, y: 1200 }
+		},
+		{
+			id: 3,
+			title: 'Conversation',
+			src: 'https://www.youtube.com/embed/U1lJdEw6ElQ?si=vitJOEFw9NPgGYrO',
+			isLarge: false,
+			show: true,
+			direction: { x: 1000, y: 0 }
 		}
 	];
 
@@ -69,8 +77,8 @@
 		display: flex;
 		flex-direction: row;
 		gap: 6rem;
-        align-items: flex-start;
-        flex-wrap: wrap;
+		align-items: flex-start;
+		flex-wrap: wrap;
 	}
 
 	.window {
@@ -85,6 +93,4 @@
 	.enlarged {
 		min-width: 60vw;
 	}
-
-	
 </style>
