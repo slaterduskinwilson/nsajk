@@ -8,9 +8,9 @@
 			
 			<section class="field-row" style="justify-content: flex-start">
 				<div class="square" style="border: 1px solid black;"><img src="/icon/noun-guitar-smash-106414.svg" alt="" style="max-width: 100%;"></div>
-				<p class="alert-text" style="padding-left:10px;">
+				
 					<slot></slot>
-				</p>
+			
 			</section>
 			<section class="field-row" style="justify-content: flex-end">
 				<button class="btn">Fuck This Shit</button>
