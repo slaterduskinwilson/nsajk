@@ -85,7 +85,7 @@
 				</li>
 
 				<li role="menu-item">
-					<a href="art.html">Sketchbook</a>
+					<a href="/sketchbook">Sketchbook</a>
 				</li>
 				<li class="close-hidden-menu" role="menu-item">
 					<a href="#menu">Shut Down</a>
