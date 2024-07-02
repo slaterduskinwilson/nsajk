@@ -41,16 +41,10 @@
 			Side Projects
 			<ul role="menu">
 				<li role="menu-item">
-					<a href="/sideprojects/skannieraitt" 
-						>Skannie Raitt</a
-					>
+					<a href="/sideprojects/skannieraitt">Skannie Raitt</a>
 				</li>
 				<li role="menu-item">
-					<a
-						href="https://soundcloud.com/hardmikeandthelemonades/calm-down-10"
-						target="_blank"
-						rel="noopener noreferrer">Hard Mike and the Lemonades</a
-					>
+					<a href="/sideprojects/hardmike">Hard Mike and the Lemonades</a>
 				</li>
 			</ul>
 		</li>
