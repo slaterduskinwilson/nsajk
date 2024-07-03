@@ -12,12 +12,10 @@
 	<img src="/02.png" alt="Bonnie Raitt, but ska" style="max-width: 100%;" />
 </div>
 <p class="alert-text" style="padding-left:2rem;">
-	Hard Mike and the Lemonades is an improvisational collective that records every time they're in a
-	room together. In this way they're kind of like the Stasi, but more irie. Based out of Chapel
-	Hill, the band has changed its name several times, and have also been billed as Solo Basura,
-	Ice/No Ice, Calm Down, Blues Lawyer, and Miami Face Eater. The collective has at one time or
-	another featured Michael Myerson, Chris Haynes, Meredith Sause, Jason Sonnenschein, Bryce Wilson,
-	and Rob Chamberlain.
+	Foxy Gloss was a synth and guitar band that played the type of music that a white person who
+	listened to NPR might really like. Based in Durham North Carolina, Foxy Gloss featured Jason Carr,
+	Leif Gann-Matzen, and Betsy Shane. The band broke up during the recording sessions for their first
+	record.
 </p>
 
 <!-- markup (zero or more items) goes here -->

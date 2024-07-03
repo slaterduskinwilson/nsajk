@@ -46,6 +46,15 @@
 				<li role="menu-item">
 					<a href="/sideprojects/hardmike">Hard Mike and the Lemonades</a>
 				</li>
+				<li role="menu-item">
+					<a href="/sideprojects/nakedtime">Naked Time</a>
+				</li>
+				<li role="menu-item">
+					<a href="/sideprojects/foxygloss">Foxy Gloss</a>
+				</li>
+				<li role="menu-item">
+					<a href="/sideprojects/swank7">Swank7</a>
+				</li>
 			</ul>
 		</li>
 		<li role="menu-item" tabindex="0" aria-haspopup="true">
@@ -59,7 +68,7 @@
 					>
 				</li>
 				<li role="menu-item">
-					<a href="https://svuroleplay.com"
+					<a href="/svu/soundtrack"
 						>Listen to
 						<em>SVU: The RPG: The Soundtrack</em></a
 					>
