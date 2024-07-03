@@ -1,7 +1,34 @@
+<script context="module">
+  
+	export async function load({ fetch }) {
+        try {
+            const response = await fetch('/api/sketches');
+            if (!response.ok) {
+                throw new Error('Failed to fetch images');
+            }
+            const images = await response.json();
+            console.log('Fetched images in load function:', images);  // Log the fetched images to debug
+            return { images };
+        } catch (error) {
+            console.error('Error in load function:', error);
+            return { images: [] };
+        }
+    }
+</script>
+
 <script>
 	import { fly } from 'svelte/transition';
 
 	let showWindow = true;
+
+	export let data;
+
+	export let loading = true;
+
+	$: if (data) {
+		loading = false;
+		console.log('Data received in componentttt:', data); // Log the data received in the component
+	}
 </script>
 
 {#if showWindow}
@@ -17,19 +44,30 @@
 			<h4>This section showcases the raw materials used to build NSA jk.</h4>
 			<p>
 				Music, particularly the obsessively multitracked kind, doesn't usually queaph itself into
-				existence one day just because you happen to be at an artist's retreat on Crete that day.
-				Time must be taken to collect many grains of sand that irritate you. It is these tiny grains
-				of irritant that will gradually form the pearl that will hopefully get you laid or at least
-				some free alcohol or drugs.
+				existence one day just because it happens to be the day that you're at an artist's retreat
+				on Crete. Time must be taken to collect many grains of sand that irritate you. It is these
+				tiny grains of irritant that will gradually form the pearl that will hopefully get you laid
+				or at least some free alcohol or drugs.
 			</p>
 			<p>
 				When they're doing a good job, members of NSA/jk are always taping, and almost always paying
-				attention. There are hundreds of iPhone voice memo recordings that paint as complete a
-				picture as you can of a person trying not to just the fucking fucking aaaaaaaaaaaa. And
-				sometimes even succeeding.
+				attention.
 			</p>
-
-            <a href="">Click here to visit NSAjk.org, home of the archival recordings of NSA jk.</a>
+			{#if loading}
+				<p>Loading...</p>
+			{:else if data.images && data.images.length > 0}
+				<div class="gallery">
+					{#each data.images as image}
+						<img src={image} alt="Sketchbook Image" />
+					{/each}
+				</div>
+			{:else}
+				<p>No images found.</p>
+			{/if}
+			<hr />
+			<hr />
+			<hr />
+			<a href="">Click here to visit NSAjk.org, home of the archival recordings of NSA jk.</a>
 		</div>
 	</div>
 {/if}
@@ -40,5 +78,17 @@
 	.sketchbook {
 		max-width: 60%;
 		margin: 8rem;
+	}
+
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+	.gallery img {
+		max-width: 100%;
+		height: auto;
+		border: 1px solid #ddd;
+		border-radius: 8px;
 	}
 </style>
