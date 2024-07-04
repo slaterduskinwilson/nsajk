@@ -105,22 +105,22 @@
 </div>
 
 <style>
-	body,
+	/* body,
 	html {
 		margin: 0;
 		padding: 0;
-	}
+	} */
 
 	ul {
 		list-style: none;
 	}
 
-	.window h1,
+	/* .window h1,
 	.window h2,
 	.window h3,
 	.window p {
 		padding: 2rem;
-	}
+	} */
 
 	ul li {
 		margin: 1.2rem;

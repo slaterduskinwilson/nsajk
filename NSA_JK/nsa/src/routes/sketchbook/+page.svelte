@@ -27,7 +27,7 @@
 
 	$: if (data) {
 		loading = false;
-		console.log('Data received in componentttt:', data); // Log the data received in the component
+		console.log('Data received in component:', data); // Log the data received in the component
 	}
 </script>
 
