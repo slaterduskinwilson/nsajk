@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
   
 	export async function load({ fetch }) {
         try {
@@ -14,23 +14,45 @@
             return { images: [] };
         }
     }
-</script>
+</script> -->
 
 <script>
 	import { fly } from 'svelte/transition';
 
 	let showWindow = true;
 
-	export let data;
+	// export let data;
 
-	export let loading = true;
+	// export let loading = true;
 
-	$: if (data) {
-		loading = false;
-		console.log('Data received in component:', data); // Log the data received in the component
-	}
+	// $: if (data) {
+	// 	loading = false;
+	// 	console.log('Data received in component:', data); // Log the data received in the component
+	// }
+	const imageModules = import.meta.glob(
+		'/src/sketchbook/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+		{
+			eager: true,
+			query: {
+				enhanced: true
+			}
+		}
+	);
+
+	// console.log(Object.entries(imageModules));
+
 </script>
 
+{#if Object.entries(imageModules)}
+	{#each Object.entries(imageModules) as [_path, module]}
+		<enhanced:img src={(module.default[0]).split('?')[0]} alt="some alt text" />
+	{/each}
+{/if}
+
+<hr />
+<hr />
+<hr />
+<br /><br /><br /><br />
 {#if showWindow}
 	<div class="window sketchbook" transition:fly={{ x: -100, y: 800, duration: 600 }}>
 		<div class="title-bar">
@@ -53,7 +75,7 @@
 				When they're doing a good job, members of NSA/jk are always taping, and almost always paying
 				attention.
 			</p>
-			{#if loading}
+			<!-- {#if loading}
 				<p>Loading...</p>
 			{:else if data.images && data.images.length > 0}
 				<div class="gallery">
@@ -63,7 +85,7 @@
 				</div>
 			{:else}
 				<p>No images found.</p>
-			{/if}
+			{/if} -->
 			<hr />
 			<hr />
 			<hr />
